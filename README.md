@@ -1,10 +1,14 @@
-# Yew Trunk Template
+# PID Viewer
 
-This is a fairly minimal template for a Yew app that's built with [Trunk].
+A simple PID viewer written in Rust using the [Trunk] framework.
 
 ## Usage
 
-For a more thorough explanation of Trunk and its features, please head over to the [repository][trunk].
+The PID viewer is a simple web app that displays the PID controller's output. PID stands for Proportional-Integral-Derivative, which is a control loop feedback mechanism widely used in industrial control systems.
+
+The app has three sliders to adjust the P, I, and D values of the PID controller. The output is displayed in a graph that updates in real-time.
+
+The app is built using the [Trunk] framework, which is a simple and fast web app build tool for Rust.
 
 ### Installation
 
@@ -48,27 +52,8 @@ You can also pass the `--release` flag to `trunk serve` if you need to get every
 
 Unless overwritten, the output will be located in the `dist` directory.
 
-## Using this template
-
-There are a few things you have to adjust when adopting this template.
-
-### Remove example code
-
-The code in [src/main.rs](src/main.rs) specific to the example is limited to only the `view` method.
-There is, however, a fair bit of Sass in [index.scss](index.scss) you can remove.
-
-### Update metadata
-
-Update the `name`, `version`, `description` and `repository` fields in the [Cargo.toml](Cargo.toml) file.
-The [index.html](index.html) file also contains a `<title>` tag that needs updating.
-
-Finally, you should update this very `README` file to be about your app.
-
 ### License
 
-The template ships with both the Apache and MIT license.
-If you don't want to have your app dual licensed, just remove one (or both) of the files and update the `license` field in `Cargo.toml`.
-
-There are two empty spaces in the MIT license you need to fill out: `` and `lihuanshuai <lihuanshuaiplus@qq.com>`.
+This project is licensed under the MIT license.
 
 [trunk]: https://github.com/thedodd/trunk

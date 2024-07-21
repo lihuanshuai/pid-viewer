@@ -4,9 +4,10 @@ use yew::prelude::*;
 pub fn app() -> Html {
     html! {
         <main>
-            <img class="logo" src="https://yew.rs/img/logo.png" alt="Yew logo" />
-            <h1>{ "Hello World!" }</h1>
-            <span class="subtitle">{ "from Yew with " }<i class="heart" /></span>
+            <h1>{ "PID Viewer" }</h1>
+            <p>{ "This is a simple PID viewer." }</p>
+            <p>{ "It is a work in progress." }</p>
+            // TODO: Add the PID component here
         </main>
     }
 }
